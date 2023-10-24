@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- References: Stackoverflow, Google, Lecture notes and videos -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Interactive ABCs of CSS Technology</title>
+  </head>
+  <body>
+    <!-- Different div classes so they can be wrapped with a border -->
+    <div class="container">
+      <div class="text-container">
+        <p>
+          Welcome to the Interactive ABCs of CSS Technology learning Website
+        </p>
+      </div>
+      <div class="text-container">
+        <p>
+          Click on the buttons below to reveal and learn the CSS technology
+          features of the corresponding letters
+        </p>
+      </div>
+      <!-- The different image containers with their Hide Result buttons -->
+      <div class="img-container" id="a-container">
+        <img
+          id="img-a"
+          src="img/css-letter-a.png"
+          alt="A for aspect-ratio"
+          class="hidden"
+        />
+        <button class="hide-button hidden" onclick="hideImage('a')">
+          Hide Result
+        </button>
+        <button onclick="revealFeature('a')">A</button>
+      </div>
+
+      <div class="img-container" id="b-container">
+        <img
+          id="img-b"
+          src="img/css-letter-b.png"
+          alt="B for border"
+          class="hidden"
+        />
+        <button class="hide-button hidden" onclick="hideImage('b')">
+          Hide Result
+        </button>
+        <button onclick="revealFeature('b')">B</button>
+      </div>
+
+      <div class="img-container" id="c-container">
+        <img
+          id="img-c"
+          src="img/css-letter-c.png"
+          alt="C for colors"
+          class="hidden"
+        />
+        <button class="hide-button hidden" onclick="hideImage('c')">
+          Hide Result
+        </button>
+        <button onclick="revealFeature('c')">C</button>
+      </div>
+    </div>
+    <!-- the js  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
